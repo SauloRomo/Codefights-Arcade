@@ -1,0 +1,4 @@
+function add(param1, param2) {
+var x = param1 + param2;
+    return x;
+}
