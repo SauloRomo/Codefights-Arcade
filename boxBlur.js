@@ -1,5 +1,5 @@
 function boxBlur(image) {
-  var answer = [];
+  var result = [];
   for (var x = 1; x < image.length - 1; x++) {
     var line = [];
     for (var y = 1; y < image[0].length - 1; y++) {
@@ -11,7 +11,8 @@ function boxBlur(image) {
       }
       line.push(Math.floor(sum / 9));
     }
-    answer.push(line);
+    result.push(line);
   }
-  return answer;
+  return result;
 }
+
