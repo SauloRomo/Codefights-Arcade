@@ -1,0 +1,4 @@
+function findEmailDomain(address) {
+ var result = address.split("@");
+    return result[result.length - 1]
+}
